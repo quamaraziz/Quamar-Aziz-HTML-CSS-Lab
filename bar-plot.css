@@ -1,0 +1,117 @@
+section.bar-graph.bar-graph-vertical.bar-graph-two {
+    background: #d7d5d575;
+    padding: 20px;
+}
+section.bar-graph h1.text-center {
+    text-align: center;
+    font-size: 22px;
+    font-weight: 800;
+    margin-bottom: 0px;
+}
+.bar-box {
+  background: rgba(255,255,255,0.1);
+}
+
+.bar-graph-vertical {  
+  position: fixed;
+  top: 20%;
+  left: 40%;
+}
+.bar-container {
+    background: #fff;
+}
+
+.bar-graph-vertical .bar-container {
+  float: left;
+  height: 300px;
+  margin-right: 40px;
+  position: relative;
+  text-align: center;
+  width: 35px;
+  bottom: 20px;
+}
+.bar-three.bar-container {
+    margin: 0px;
+}
+.bar-graph-vertical .bar {
+  border-radius: 3px;
+  bottom: 20px;
+  position: absolute;
+  width: 35px;
+  animation: load 3s normal forwards;
+  box-shadow: 0 10px 40px -10px #fff;
+  /* border-radius: 100px; */
+  background: #fff;
+  
+  /* width: 0; */
+}
+
+.bar-graph-vertical .year {
+  bottom: 0;
+  left: 0;
+  margin: 0 auto;
+  position: absolute;
+  right: 0;
+}
+
+span.year {
+    background: #efeeee;
+    font-size: 16px;
+    font-weight: 600;
+    padding-top: 12px;
+}
+
+.bar-graph-two .bar-one .bar {
+  background-color: #bfbebe;
+  -webkit-animation: show-bar-one-vertical 1.2s 0.1s forwards;
+  -moz-animation: show-bar-one-vertical 1.2s 0.1s forwards;
+  animation: show-bar-one-vertical 1.2s 0.1s forwards;
+}
+
+.bar-graph-two .bar-two .bar {
+  background-color: #bfbebe;
+  -webkit-animation: show-bar-two-vertical 1.2s 0.2s forwards;
+  -moz-animation: show-bar-two-vertical 1.2s 0.2s forwards;
+  animation: show-bar-two-vertical 1.2s 0.2s forwards;
+}
+
+.bar-graph-two .bar-three .bar {
+  max-height: 80%;
+  background-color: #bfbebe;
+  -webkit-animation: show-bar-three-vertical 1.2s 0.3s forwards;
+  -moz-animation: show-bar-three-vertical 1.2s 0.3s forwards;
+  animation: show-bar-three-vertical 1.2s 0.3s forwards;
+}
+.bar {
+    background-color: #e4c465;
+    animation: progressBar 3s ease-in-out;
+    animation-fill-mode:both; 
+}
+
+/* Bar Graph Vertical Animations */
+@-webkit-keyframes show-bar-one-vertical {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 30%;
+  }
+}
+
+@-webkit-keyframes show-bar-two-vertical {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 40%;
+  }
+}
+
+@-webkit-keyframes show-bar-three-vertical {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 80%;
+  }
+}
